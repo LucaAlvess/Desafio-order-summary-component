@@ -1,0 +1,150 @@
+/* variaveis */
+:root{
+    /* Cores primárias */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /* Neutro */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    /* font-size */
+    --Font-size-paragraph: 16px;
+}
+
+body{
+    background-color: var(--Pale-blue);
+    width: 100vw;
+    height: 100vh;
+}
+
+picture{
+    position: absolute;
+}
+/* Container */
+.container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    /* border: 1px solid red; */
+}
+/* Conteúdo */
+.conteudo{
+    width: 21rem;
+    margin: 50px auto;
+    border-radius: 15px;
+    background-color: var(--Very-pale-blue);
+}
+
+.imagem > img{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/* texto principal */
+.textos {
+    text-align: center;
+    width: 16.9rem;
+    margin: 0 auto;
+
+
+    /* border: solid red 1px; */
+}
+h1{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.textos > p{
+    line-height: 25px;
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+/* plano-servico */
+.plano-servico{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+
+   width: 18.9rem;
+   height: 70px;
+   margin: 0 auto;
+   background-color: hsl(225, 100%, 94%, .3);
+   border-radius: 8px;
+
+   margin-bottom: 25px;
+   
+    /* border: red solid 1px; */
+}
+.plano-servico > img{
+    /* border: greenyellow solid 1px; */
+    margin-left: -35px;
+}
+.plano-servico > a{
+    margin-right: -35px;
+    color: var(--Bright-blue);
+}
+.textos-plano{
+    margin-left: -30px;
+    /* border: solid 1px; */
+}
+.textos-plano > p{
+    color: var(--Desaturated-blue);
+}
+h3{
+    font-size: 16px;
+    /* border: green solid 1px; */
+}
+/* Botoes */
+.botao-pagamento{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.botao-pagamento > input{
+    width: 18.9rem;
+    height: 50px;
+    color: whitesmoke;
+    background-color: var(--Bright-blue);
+    border-radius: 8px;
+    border: none;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: .2s linear;
+    box-shadow: 1px 20px 10px hsl(224, 23%, 55%, .2);;
+}
+.botao-concelar{
+    text-align: center;
+}
+.botao-concelar > input{
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+    font-size: 15px;
+    font-weight: 900;
+
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+/* hover */
+a:hover{
+    color: hsl(245, 75%, 52%, .5);
+    text-decoration: none;
+}
+.botao-pagamento > input:hover{
+    background-color: hsl(245, 75%, 52%, .5);
+}
+.botao-concelar > input:hover{
+    color: var(--Dark-blue);
+}
+@media(min-width: 376px){
+    .img-desktop{
+        width: 100%;
+    }
+}
